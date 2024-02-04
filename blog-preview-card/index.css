@@ -1,0 +1,110 @@
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2');
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('wght') tech('variations');
+    font-weight: normal;
+    font-stretch: normal;
+}
+* {
+    --primary-color: hsl(47, 88%, 63%);
+    --neutral-color: hsl(0, 0%, 50%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+    --neutral-color-black: hsl(0, 0%, 7%);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    font-family: Figtree, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+.card{
+    padding: 1rem;
+    border: 2px solid var(--neutral-color-black);
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: var(--neutral-color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: 8px 8px 0px 1px var(--neutral-color-black);
+    margin:20px;
+}
+.card h1 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.card p {
+    color: var(--neutral-color);
+    margin-bottom: 20px;
+}
+.card a {
+    text-decoration: none;
+    color: var(--neutral-color-black)
+}
+.card a:hover {
+    color: var(--primary-color);
+}
+
+.published-date {
+    margin: 20px 0;
+}
+.published-date .tag {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.published-date div {
+    margin-top: 10px;
+    font-size: small;
+ }
+.attribution {
+    margin-top: 10px;
+}
+.image-preview{
+    border-radius: 8px;
+}
+.author-persona {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.image-persona{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
