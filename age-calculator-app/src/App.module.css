@@ -1,0 +1,17 @@
+.card {
+  padding: 2rem;
+  background-color: var(--color-neutral-white);
+  border-radius: 15px 15px 60px 15px;
+}
+
+.ageResult {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  align-items: start;
+  font-style: italic;
+}
+
+.ageNumber {
+  color: var(--color-primary-purple)
+}
